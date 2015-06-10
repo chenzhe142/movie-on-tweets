@@ -1,0 +1,3 @@
+Advice about keeping secrets:
+It's a lot easier if you don't know it in the first place.
+- Benedict Cumberbatch, The Imitation Game
