@@ -15,6 +15,7 @@
 
 		<!-- load fontawesome library -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 		<style type="text/css">
 		body {
 			font-size: 16px;
@@ -37,16 +38,16 @@
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li>
-          <a href="#">View on GitHub</a>
+          <a href="https://github.com/chenzhe142/nu-eecs349/tree/gh-pages/source_code">GitHub Repository</a>
         </li>
 <!--         <li>
           <a href="#">Download Zip files</a>
         </li> -->
         <li>
-          <a href="#">View final report</a>
+          <a href="#">Final Report</a>
         </li>
 		<li>
-          <a href="#sec5">About team</a>
+          <a href="#sec5">About Team</a>
         </li>
       </ul>
     </nav>
@@ -73,9 +74,9 @@
             
             <br>
             
-			<a href="#" class="btn btn-info" role="button"> View on GitHub</a>
+			<a href="https://github.com/chenzhe142/nu-eecs349/tree/gh-pages/source_code" class="btn btn-info" role="button">GitHub Repository</a>
 			<!-- <a href="#" class="btn btn-success" role="button">Download Zip files</a> -->
-			<a href="#" class="btn btn-warning" role="button">View final report</a>
+			<a href="#" class="btn btn-warning" role="button">Final Report</a>
         </center>
         </div>
           
@@ -94,7 +95,7 @@
           <li><a href="#masthead">Home</a></li>
           <li><a href="#sec0">Motivation</a></li>
           <li><a href="#sec1">Solution</a></li>
-	          <li><a href="#sec2">Dataset</a></li>
+          <li><a href="#sec2">Dataset</a></li>
           <li><a href="#sec3">Training and Testing</a></li>
           <li><a href="#sec4">Result</a></li>
           <li><a href="#sec5">Team</a></li>
@@ -107,10 +108,12 @@
       	<div class="row" id="sec0">
 	        <h1><i class="fa fa-angle-right fa-1x"></i> Motivation</h1>
 	        <hr>
-	        <p>Movie on Tweets is a IMDb movie score predictor, using movie's tweets retrieved from Twitter. Our task is to analyze the feedback of a movie (either positive or negative) based on tweets that have mentioned the movie, for example, using hashtags. </p>
+	        <p>Movie on Tweets is a IMDb movie score predictor, using movie's tweets retrieved from Twitter</p>
 	        
-	        <p>Twitter is one of the most popular social media where people post comments about their everyday life. Users share their reviews about a movie on Twitter which possibly encourage or discourage their followers’ motivations of watching the movie. Since Twitter restricts each tweet to be less than 140 characters, users’ comments tend to be straightforward. In addition, because of its huge influences, many movies have started to include a hashtag in their trailers that tell people to tweet about them to attract social attention. Therefore, Twitter has become a great platform to examine people’s feedback on a movie. By analyzing the sentiment of thousands of tweets by people who have watched the film, a general review of the movie can be made. Users can then use the review to decide whether or not to watch the film.</p>
-	        <hr>
+	        <p>
+	          Here's our motivation.
+	      	</p>
+	          <hr>
         </div>
 
 
@@ -172,70 +175,28 @@
         	<h1><i class="fa fa-angle-right fa-1x"></i> Training and Testing</h1>
 	        <hr>
 	        <p>
-	          Images are responsive sed @mdo but sum are more fun peratis unde omnis iste natus error sit voluptatem accusantium doloremque laudanti
+	          Images are responsive sed @mdo but sum are more fun peratis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+	          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+	          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
+	          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+	          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
 	          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut..</p>
-
-	        <p>Traning and testing result is shown in the following table:</p>
-
-	        <table class="table table-striped table-hover ">
-    			<thead>
-	          	<tr class="success">
-	          		<th colspan="2">Features</th>
-	          		<th>Single Words</th>		
-	          		<th>Single Word + Bigram</th>
-	          	</tr>
-	          	</thead>
-    			<tbody>
-	          	<tr class="active">
-	          		<td>Positive</td>
-	          		<td>Precision</td>	
-	          		<td>0.855773972033</td>		
-	          		<td>0.920307652833</td>
-	          	</tr>
-	            <tr class="info">
-	          		<td>Positive</td>
-	          		<td>Recall</td>	
-	          		<td>0.855773972033</td>		
-	          		<td>0.920307652833</td>
-	          	</tr>
-	          	<tr class="active">
-	          		<td>Positive</td>
-	          		<td>F-measure</td>	
-	          		<td>0.855773972033</td>		
-	          		<td>0.920307652833</td>
-	          	</tr>
-	          	<tr class="info">
-	          		<td>Negative</td>
-	          		<td>Precision</td>	
-	          		<td>0.855773972033</td>		
-	          		<td>0.920307652833</td>
-	          	</tr>
-	          	<tr class="active">
-	          		<td>Negative</td>
-	          		<td>Recall</td>	
-	          		<td>0.855773972033</td>		
-	          		<td>0.920307652833</td>
-	          	</tr>
-	          	<tr class="info">
-	          		<td>Negative</td>
-	          		<td>F-measure</td>	
-	          		<td>0.855773972033</td>		
-	          		<td>0.920307652833</td>
-	          	</tr>
-	          	</tbody>
-	        </table>
-	        <p>We can see from the figure above that adding bigram increases the performance slightly, but not very obvious. This maybe because when adding features to classifier, some of them are useless. These irrelevant features create noise to the classifier, and thus not improving the accuracy as expected.</p>
-
+	        <p>
+	          Fos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+	          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+	          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut..</p>
         </div>
 
         <div class="row" id="sec4">
         	<h1><i class="fa fa-angle-right fa-1x"></i> Result</h1>
 	        <hr>
 	        <p>
-	        After implemented our system, we will apply it on tweets data of recent released movies, and compare the result with the score on IMDb to see if our system performs well or not. We have successfully retrieved our test data from Twitter using Twitter API, but we still need to preprocess data before testing.</p>
-	        <p>In python, we use filter named langid to filter language other than English, and then get rid of examples with links to avoid unnecessary information like ads.</p>
-
-		<br>
+	          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+	          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+	          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
+	          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+	          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+	          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.</p>
          </div>
 
         <hr>
