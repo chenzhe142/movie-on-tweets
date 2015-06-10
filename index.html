@@ -109,7 +109,9 @@
 	        <hr>
 	        <p>Movie on Tweets is a IMDb movie score predictor, using movie's tweets retrieved from Twitter. Our task is to analyze the feedback of a movie (either positive or negative) based on tweets that have mentioned the movie, for example, using hashtags. </p>
 	        
-	        <p>Twitter is one of the most popular social media where people post comments about their everyday life. Users share their reviews about a movie on Twitter which possibly encourage or discourage their followers’ motivations of watching the movie. Since Twitter restricts each tweet to be less than 140 characters, users’ comments tend to be straightforward. In addition, because of its huge influences, many movies have started to include a hashtag in their trailers that tell people to tweet about them to attract social attention. Therefore, Twitter has become a great platform to examine people’s feedback on a movie. By analyzing the sentiment of thousands of tweets by people who have watched the film, a general review of the movie can be made. Users can then use the review to decide whether or not to watch the film.</p>
+	        <p>Twitter is one of the most popular social media where people post comments about their everyday life. 
+	        	<br>
+	        	Users share their reviews about a movie on Twitter which possibly encourage or discourage their followers’ motivations of watching the movie. Since Twitter restricts each tweet to be less than 140 characters, users’ comments tend to be straightforward. In addition, because of its huge influences, many movies have started to include a hashtag in their trailers that tell people to tweet about them to attract social attention. Therefore, Twitter has become a great platform to examine people’s feedback on a movie. By analyzing the sentiment of thousands of tweets by people who have watched the film, a general review of the movie can be made. Users can then use the review to decide whether or not to watch the film.</p>
 	        <hr>
         </div>
 
@@ -157,6 +159,9 @@
 	      	<p>
 	          As for testing dataset, we use Twitter API and Python to retrieve tweets from Twitter by search keywords of a movie. After preprocessing and filtering spam and irrelevant tweets, we use this tweets to test our Naive Bayes Network Classifier.
 	        </p>
+	        <p>
+	          Check out our test movie datasets in <a href="https://github.com/chenzhe142/nu-eecs349/tree/gh-pages/source_code/datasets">here</a>.
+	        </p>
 <!-- 	        <div class="row">
 	          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
 	          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
@@ -177,7 +182,7 @@
 
 	        <!-- <p>Traning and testing result is shown in the following table:</p> -->
 
-	        <table class="table table-striped table-hover ">
+	        <table class="table table-striped table-hover">
     			<thead>
 	          	<tr class="success">
 	          		<th colspan="2">Features</th>
@@ -186,45 +191,45 @@
 	          	</tr>
 	          	</thead>
     			<tbody>
-	          	<tr class="active">
-	          		<td>Positive</td>
+	          	<tr class="">
+	          		<td></td>
 	          		<td>Precision</td>	
 	          		<td>0.855773972033</td>		
 	          		<td>0.920307652833</td>
 	          	</tr>
-	            <tr class="active">
+	            <tr class="" style="background-color: #f9f9f9">
 	          		<td>Positive</td>
 	          		<td>Recall</td>	
 	          		<td>0.855773972033</td>		
 	          		<td>0.920307652833</td>
 	          	</tr>
-	          	<tr class="active">
-	          		<td>Positive</td>
+	          	<tr class="">
+	          		<td></td>
 	          		<td>F-measure</td>	
 	          		<td>0.855773972033</td>		
 	          		<td>0.920307652833</td>
 	          	</tr>
-	          	<tr class="info">
-	          		<td>Negative</td>
+	          	<tr class="active">
+	          		<td></td>
 	          		<td>Precision</td>	
 	          		<td>0.855773972033</td>		
 	          		<td>0.920307652833</td>
 	          	</tr>
-	          	<tr class="info">
+	          	<tr class="active">
 	          		<td>Negative</td>
 	          		<td>Recall</td>	
 	          		<td>0.855773972033</td>		
 	          		<td>0.920307652833</td>
 	          	</tr>
-	          	<tr class="info">
-	          		<td>Negative</td>
+	          	<tr class="active">
+	          		<td></td>
 	          		<td>F-measure</td>	
 	          		<td>0.855773972033</td>		
 	          		<td>0.920307652833</td>
 	          	</tr>
 	          	</tbody>
 	        </table>
-	        <p>We can see from the figure above that adding bigram increases the performance slightly, but not very obvious. This maybe because when adding features to classifier, some of them are useless. These irrelevant features create noise to the classifier, and thus not improving the accuracy as expected.</p>
+	        <p>We can see from the table above, that adding bigram increases the performance slightly, but not very obvious. This maybe because when adding features to classifier, some of them are useless. These irrelevant features create noise to the classifier, and thus not improving the accuracy as expected.</p>
 
         </div>
 
