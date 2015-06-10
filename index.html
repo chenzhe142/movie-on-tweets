@@ -118,7 +118,7 @@
         	<h1><i class="fa fa-angle-right fa-1x"></i> Solution</h1>
         	<hr>
 	        <p>
-	          We choose Bayes Network algorithm as our approach to this problem.
+	          We choose Naive Bayes Network algorithm as our approach to this problem.
 	        </p>
 	        <div class="row">
 	          <div class="col-md-6">
@@ -155,7 +155,7 @@
 	          We use Large Movie Review Dataset from Stanford University (<a href="http://ai.stanford.edu/~amaas/data/sentiment/">http://ai.stanford.edu/~amaas/data/sentiment/</a>) as training dataset. 
 	      	</p>
 	      	<p>
-	          As for testing dataset, we use Twitter API and Python to retrieve tweets from Twitter by search keywords of a movie. After preprocessing and filtering spam and irrelevant tweets, we use this tweets to test our Bayes Networks using 10-fold cross validation.
+	          As for testing dataset, we use Twitter API and Python to retrieve tweets from Twitter by search keywords of a movie. After preprocessing and filtering spam and irrelevant tweets, we use this tweets to test our Naive Bayes Network Classifier.
 	        </p>
 <!-- 	        <div class="row">
 	          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
@@ -171,11 +171,11 @@
         <div class="row" id="sec3">
         	<h1><i class="fa fa-angle-right fa-1x"></i> Training and Testing</h1>
 	        <hr>
-	        <p>
-	          Images are responsive sed @mdo but sum are more fun peratis unde omnis iste natus error sit voluptatem accusantium doloremque laudanti
-	          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut..</p>
+	        <h3>Perform 10-fold cross validation with Large Movie Review Dataset</h3>
+	        <!-- <p>First, we use the Large Movie Review Dataset from Stanford to train</p> -->
+	        <p>The result of 10-fold cross validation is shown as follows.</p>
 
-	        <p>Traning and testing result is shown in the following table:</p>
+	        <!-- <p>Traning and testing result is shown in the following table:</p> -->
 
 	        <table class="table table-striped table-hover ">
     			<thead>
@@ -192,7 +192,7 @@
 	          		<td>0.855773972033</td>		
 	          		<td>0.920307652833</td>
 	          	</tr>
-	            <tr class="info">
+	            <tr class="active">
 	          		<td>Positive</td>
 	          		<td>Recall</td>	
 	          		<td>0.855773972033</td>		
@@ -210,7 +210,7 @@
 	          		<td>0.855773972033</td>		
 	          		<td>0.920307652833</td>
 	          	</tr>
-	          	<tr class="active">
+	          	<tr class="info">
 	          		<td>Negative</td>
 	          		<td>Recall</td>	
 	          		<td>0.855773972033</td>		
