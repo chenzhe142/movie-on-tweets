@@ -2,7 +2,7 @@
 $(document).ready(function(){/* activate sidebar */
 $('#sidebar').affix({
   offset: {
-    top: 235
+    top: 500
   }
 });
 
