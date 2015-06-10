@@ -230,6 +230,57 @@
 	          	</tbody>
 	        </table>
 	        <p>We can see from the table above, that adding bigram increases the performance slightly, but not very obvious. This maybe because when adding features to classifier, some of them are useless. These irrelevant features create noise to the classifier, and thus not improving the accuracy as expected.</p>
+	        <hr>
+	        <h3>Test Naive Bayes Network Classifier with movie tweets review datasets</h3>
+	        <p>After retrieving and preprocessing tweets from Twitter, we test our Naive Bayes Network Classifier with 3 different movie datasets.<br>
+	        The results are shown as follows.</p>
+			<table class="table table-striped table-hover">
+    			<thead>
+	          	<tr class="success">
+	          		<th colspan="2">Features</th>
+	          		<th>Single Words</th>		
+	          		<th>Single Word + Bigram</th>
+	          	</tr>
+	          	</thead>
+    			<tbody>
+	          	<tr class="">
+	          		<td></td>
+	          		<td>Precision</td>	
+	          		<td>0.855773972033</td>		
+	          		<td>0.920307652833</td>
+	          	</tr>
+	            <tr class="" style="background-color: #f9f9f9">
+	          		<td>Positive</td>
+	          		<td>Recall</td>	
+	          		<td>0.855773972033</td>		
+	          		<td>0.920307652833</td>
+	          	</tr>
+	          	<tr class="">
+	          		<td></td>
+	          		<td>F-measure</td>	
+	          		<td>0.855773972033</td>		
+	          		<td>0.920307652833</td>
+	          	</tr>
+	          	<tr class="active">
+	          		<td></td>
+	          		<td>Precision</td>	
+	          		<td>0.855773972033</td>		
+	          		<td>0.920307652833</td>
+	          	</tr>
+	          	<tr class="active">
+	          		<td>Negative</td>
+	          		<td>Recall</td>	
+	          		<td>0.855773972033</td>		
+	          		<td>0.920307652833</td>
+	          	</tr>
+	          	<tr class="active">
+	          		<td></td>
+	          		<td>F-measure</td>	
+	          		<td>0.855773972033</td>		
+	          		<td>0.920307652833</td>
+	          	</tr>
+	          	</tbody>
+	        </table>
 
         </div>
 
