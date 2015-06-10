@@ -105,21 +105,11 @@
       	<div class="row" id="sec0">
 	        <h1><i class="fa fa-angle-right fa-1x"></i> Motivation</h1>
 	        <hr>
-	        <h3>What is Movie on Tweets</h3>
-	        <p>Movie on Tweets is a Twitter sentiment analyzer.</p>
+	        <p>Movie on Tweets is a IMDb movie score predictor, using movie's tweets retrieved from Twitter</p>
 	        
-	        <hr>
 	        <p>
-	          Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-	          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-	          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-	          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-	          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-	          Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-	          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-	          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-	          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-	          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!</p>
+	          Here's our motivation.
+	      	</p>
 	          <hr>
         </div>
 
@@ -128,8 +118,7 @@
         	<h1><i class="fa fa-angle-right fa-1x"></i> Solution</h1>
         	<hr>
 	        <p>
-	          Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-	          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.
+	          We choose Bayes Network algorithm as our approach to this problem.
 	        </p>
 	        <div class="row">
 	          <div class="col-md-6">
@@ -163,13 +152,16 @@
         	<h1><i class="fa fa-angle-right fa-1x"></i> Dataset</h1>
         	<hr>
 	        <p>
-	          We use Large Movie Review Dataset from Stanford University (<a href="http://ai.stanford.edu/~amaas/data/sentiment/">http://ai.stanford.edu/~amaas/data/sentiment/</a>) as our project dataset.
+	          We use Large Movie Review Dataset from Stanford University (<a href="http://ai.stanford.edu/~amaas/data/sentiment/">http://ai.stanford.edu/~amaas/data/sentiment/</a>) as training dataset. 
+	      	</p>
+	      	<p>
+	          As for testing dataset, we use Twitter API and Python to retrieve tweets from Twitter by search keywords of a movie. After preprocessing and filtering spam and irrelevant tweets, we use this tweets to test our Bayes Networks using 10-fold cross validation.
 	        </p>
-	        <div class="row">
+<!-- 	        <div class="row">
 	          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
 	          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
 	          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-	        </div>
+	        </div> -->
 	        <hr>
         </div>
 
