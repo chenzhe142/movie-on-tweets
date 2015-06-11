@@ -23,6 +23,12 @@ body {
  padding-top:20px;
 }
 
+.centerline {
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+}
+
 #masthead .well {
  margin-top:8%;
 }

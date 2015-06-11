@@ -211,68 +211,22 @@
 	        <p>We can see from the table above, that adding bigram increases the performance slightly, but not very obvious. This maybe because when adding features to classifier, some of them are useless. These irrelevant features create noise to the classifier, and thus not improving the accuracy as expected.</p>
 	        <hr>
 	        <h3>Test Naive Bayes Network Classifier with movie tweets review datasets</h3>
-	        <p>After retrieving and preprocessing tweets from Twitter, we test our Naive Bayes Network Classifier with 3 different movie datasets.<br>
-	        The results are shown as follows.</p>
+	        <p>After retrieving and pre-processing tweets from Twitter, we test our Naive Bayes Network Classifier with 3 different movie datasets.
+	         We have successfully retrieved our test data as 2000 samples for each movie from Twitter using Twitter API.
+				In python, we use filter named langid to filter language other than English, and then get rid of examples with links to avoid unnecessary information like ads. Results in details are shown in next Section.</p>
 
-<!-- 			<table class="table table-striped table-hover">
-    			<thead>
-	          	<tr class="success">
-	          		<th colspan="2">Features</th>
-	          		<th>Single Words</th>		
-	          		<th>Single Word + Bigram</th>
-	          	</tr>
-	          	</thead>
-    			<tbody>
-	          	<tr class="">
-	          		<td></td>
-	          		<td>Precision</td>	
-	          		<td>0.855773972033</td>		
-	          		<td>0.920307652833</td>
-	          	</tr>
-	            <tr class="" style="background-color: #f9f9f9">
-	          		<td>Positive</td>
-	          		<td>Recall</td>	
-	          		<td>0.888353508419</td>
-	          		<td>0.797222480181</td>
-	          	</tr>
-	          	<tr class="">
-	          		<td></td>
-	          		<td>F-measure</td>	
-	          		<td>0.870217714806</td>
-	          		<td>0.853164955523</td>
-	          	</tr>
-	          	<tr class="active">
-	          		<td></td>
-	          		<td>Precision</td>	
-	          		<td>0.882733702769</td>
-	          		<td>0.821094050964</td>
-	          	</tr>
-	          	<tr class="active">
-	          		<td>Negative</td>
-	          		<td>Recall</td>	
-	          		<td>0.85220049602</td>
-	          		<td>0.931654782064</td>
-	          	</tr>
-	          	<tr class="active">
-	          		<td></td>
-	          		<td>F-measure</td>	
-	          		<td>0.865545492618</td>
-	          		<td>0.871933113784</td>
-	          	</tr>
-	          	</tbody>
-	        </table> -->
-
-        </div>
+		</div>
 
         <div class="row" id="sec4">
         	<h1><i class="fa fa-angle-right fa-1x"></i> Result</h1>
 	        <hr>
 	        <p>The test results of 3 different movies are shown as follows.</p>
-	        <h1>IMAGE HERE</h1>
-	        <p>
-	        After implemented our system, we will apply it on tweets data of recent released movies, and compare the result with the score on IMDb to see if our system performs well or not. We have successfully retrieved our test data from Twitter using Twitter API, but we still need to preprocess data before testing.</p>
-	        <p>In python, we use filter named langid to filter language other than English, and then get rid of examples with links to avoid unnecessary information like ads.</p>
-
+			<img src="graphs/1.jpg" width="600" class="centerline">
+			<img src="graphs/2.png" width="600" class="centerline">
+			<img src="graphs/3.png" width="600" class="centerline">
+			<br>
+			<img src="graphs/result_graph.jpg" width="600" class="centerline">
+			<div style="text-align:center">Histogram of movie evaluation result</div>
 		<br>
          </div>
 
